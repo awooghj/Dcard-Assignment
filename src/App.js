@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import ScenicSpot from "./Spot-Component/ScenicSpot";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import CountyNavbar from "./Spot-Component/CountyNavbar";
+import CountyScreen from "./Spot-Component/CountyScreen";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <CountyNavbar />
+      <Route path="/scenicSpot/:countyName" component={CountyScreen} />
+      <Route exact path="/scenicSpot" component={ScenicSpot} />
+    </Router>
   );
 }
 
