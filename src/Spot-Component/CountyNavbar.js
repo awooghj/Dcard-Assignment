@@ -11,18 +11,18 @@ export default function CountyNavbar() {
           style={{ display: "grid", gridTemplateColumns: "repeat(8, auto)" }}>
           {counties.map((county, index) => {
             return (
-              <Link to={`/scenicSpot/${county}`}>
-                <li className="nav-item nav-link" key={index}>
+              <li className="nav-item nav-link" key={index}>
+                <Link to={`/scenicSpot/${county}`}>
                   <h5>{county}</h5>
-                </li>
-              </Link>
+                </Link>
+              </li>
             );
           })}
-          <Link to={`/scenicSpot/`}>
-            <li className="nav-item nav-link" key={0}>
+          <li className="nav-item nav-link" key={100}>
+            <Link to={`/scenicSpot/`}>
               <h5>Taiwan</h5>
-            </li>
-          </Link>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

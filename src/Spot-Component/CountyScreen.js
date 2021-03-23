@@ -5,8 +5,8 @@ export default function CountyScreen(props) {
   const county = counties.find(
     (county) => county === props.match.params.countyName
   );
-  const [currentCounty, setCurrentCounty] = useState("");
 
+  const [currentCounty, setCurrentCounty] = useState("");
   const [skip, setSkip] = useState(0);
   const [countySpotList, setCountySpotList] = useState([]);
   const [hasMore, setHasMore] = useState(false);
@@ -14,6 +14,7 @@ export default function CountyScreen(props) {
   if (currentCounty !== county) {
     setCurrentCounty(county);
     setCountySpotList([]);
+    setSkip(0);
   }
 
   const observer = useRef();
@@ -47,8 +48,11 @@ export default function CountyScreen(props) {
   useEffect(() => {
     getCountySpot(county, skip);
   }, [county, skip]);
+  console.log(skip);
+
   return (
     <>
+      <h1>{county}</h1>
       {countySpotList.map((spot, index) => {
         if (countySpotList.length === index + 1) {
           return (
