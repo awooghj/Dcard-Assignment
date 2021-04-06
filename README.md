@@ -1,7 +1,9 @@
 # Getting Started 
 
-## In terminal, call "cd client" enter the directory
+<!-- OL -->
 
-## Then call "npm install" to install all the required libraries in terminal
+1. In terminal, call "cd client" enter the directory
 
-## After the instalation, call "npm start" to start the project
+2. Then call "npm install" to install all the required libraries in terminal
+
+3. After the instalation, call "npm start" to start the project
