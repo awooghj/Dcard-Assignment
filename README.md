@@ -7,8 +7,12 @@
 ```bash
 cd client
 ```
-enter the directory
+to enter the directory
 
-2. Then call "npm install" to install all the required libraries in terminal
+2. Then call 
+```bash 
+npm install
+```
+to install all the required libraries in terminal
 
 3. After the instalation, call "npm start" to start the project
