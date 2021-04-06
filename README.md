@@ -15,4 +15,8 @@ npm install
 ```
 to install all the required libraries in terminal
 
-3. After the instalation, call "npm start" to start the project
+3. After the instalation, call
+```bash
+npm start
+```
+to start the project
