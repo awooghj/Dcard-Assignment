@@ -13,7 +13,7 @@ cd client
 ```bash 
 npm install
 ```
- to install all the required libraries in terminal
+in terminal to install all required libraries used in package.json
 
 3. After the instalation, call
 ```bash
