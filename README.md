@@ -20,3 +20,5 @@ in terminal to install all required libraries used in package.json
 npm start
 ```
  to start the project
+ 
+ 4. Open [http://localhost:3000/scenicSpot](http://localhost:3000/scenicSpot) to view it in the browser.
