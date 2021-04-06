@@ -7,16 +7,16 @@
 ```bash
 cd client
 ```
-to enter the directory
+ to enter the directory
 
 2. Then call 
 ```bash 
 npm install
 ```
-to install all the required libraries in terminal
+ to install all the required libraries in terminal
 
 3. After the instalation, call
 ```bash
 npm start
 ```
-to start the project
+ to start the project
